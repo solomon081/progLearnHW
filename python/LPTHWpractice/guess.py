@@ -1,11 +1,11 @@
 # This is a guess the number game. 
-import random
+from random import randint
 
 guessesTaken = 0
 
 myName = raw_input("Hello! What is your name? ")
 
-number = random.randint(1, 100)
+number = randint(1, 100)
 print "Well, %s I'm thinking of a number between 1 and 100." % (myName)
 
 while guessesTaken < 10:
